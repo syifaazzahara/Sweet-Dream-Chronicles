@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dreamland Chronicles - Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#3e2856",
+                        "on-tertiary-container": "#523b6b",
+                        "on-primary-container": "#653245",
+                        "on-tertiary-fixed-variant": "#5c4575",
+                        "on-primary": "#ffeff2",
+                        "primary-dim": "#753f52",
+                        "on-secondary": "#ceffd2",
+                        "primary-fixed": "#fdb5cc",
+                        "inverse-surface": "#0f0e0f",
+                        "outline-variant": "#b0acae",
+                        "error-dim": "#a70138",
+                        "tertiary-fixed": "#e0c3fc",
+                        "tertiary": "#695182",
+                        "on-primary-fixed-variant": "#6f3a4e",
+                        "on-background": "#302e30",
+                        "surface-container-low": "#f5eff1",
+                        "secondary": "#2c673c",
+                        "on-secondary-fixed-variant": "#2c673c",
+                        "background": "#fbf5f7",
+                        "on-tertiary": "#faefff",
+                        "on-primary-fixed": "#4d1e31",
+                        "tertiary-fixed-dim": "#d2b6ee",
+                        "surface-container-highest": "#e1dbde",
+                        "primary-container": "#fdb5cc",
+                        "on-error-container": "#510017",
+                        "surface-variant": "#e1dbde",
+                        "on-secondary-fixed": "#084a22",
+                        "primary-fixed-dim": "#eea8bf",
+                        "on-surface": "#302e30",
+                        "error-container": "#f74b6d",
+                        "surface": "#fbf5f7",
+                        "secondary-container": "#b2f2bb",
+                        "on-secondary-container": "#215d33",
+                        "tertiary-dim": "#5d4576",
+                        "on-surface-variant": "#5e5b5c",
+                        "secondary-fixed-dim": "#a4e3ad",
+                        "primary": "#824a5e",
+                        "secondary-fixed": "#b2f2bb",
+                        "inverse-primary": "#fdb5cc",
+                        "secondary-dim": "#1f5b31",
+                        "on-error": "#ffefef",
+                        "error": "#b41340",
+                        "inverse-on-surface": "#a09c9e",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#797678",
+                        "surface-dim": "#d9d3d6",
+                        "surface-container-high": "#e7e1e4",
+                        "surface-container": "#ece7e9",
+                        "tertiary-container": "#e0c3fc",
+                        "surface-bright": "#fbf5f7",
+                        "surface-tint": "#824a5e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #fbf5f7;
+            color: #302e30;
+        }
+        .custom-slider::-webkit-slider-runnable-track {
+            background: #e1dbde;
+            height: 12px;
+            border-radius: 9999px;
+        }
+        .custom-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 24px;
+            width: 24px;
+            background: #824a5e;
+            border-radius: 50%;
+            margin-top: -6px;
+            border: 3px solid #ffffff;
+            box-shadow: 0 2px 8px rgba(130, 74, 94, 0.2);
+        }
+        .glossy-accent {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 4px;
+            height: 4px;
+            background: white;
+            border-radius: 50%;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-24 selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar from JSON -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center px-6 py-4 bg-[#fbf5f7] dark:bg-[#1a1617] rounded-b-[3rem] shadow-[0_4px_24px_rgba(130,74,94,0.04)] bg-gradient-to-b from-[#fdb5cc]/20 to-transparent">
+<div class="flex items-center gap-4">
+<div class="transition-all duration-500 ease-in-out cursor-pointer hover:scale-95 text-[#824a5e] dark:text-[#fdb5cc]">
+<a class="material-symbols-outlined text-2xl" href = "Home_Page.html">arrow_back</a>
+</div>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-[#824a5e] dark:text-[#fdb5cc] text-xl">Settings</h1>
+</div>
+</header>
+<main class="pt-28 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Audio Section: Bento Grid Card -->
+<section class="bg-surface-container-low p-8 rounded-xl space-y-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 -mr-8 -mt-8 opacity-10">
+<span class="material-symbols-outlined text-9xl text-primary">music_note</span>
+</div>
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<h2 class="font-headline font-bold text-lg text-on-surface">Audio Immersion</h2>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<!-- Master Volume -->
+<div class="space-y-3">
+<div class="flex justify-between items-center px-1">
+<label class="font-label font-bold text-sm uppercase tracking-wider text-on-surface-variant">Master Volume</label>
+<span class="text-xs font-bold text-primary">80%</span>
+</div>
+<input class="w-full appearance-none bg-transparent custom-slider" type="range" value="80"/>
+</div>
+<!-- Three Columns for SFX, BGM, Voice -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="space-y-3 bg-surface-container-lowest p-4 rounded-lg shadow-sm">
+<label class="font-label font-bold text-xs text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">settings_input_component</span> BGM
+                        </label>
+<input class="w-full appearance-none bg-transparent custom-slider" type="range" value="65"/>
+</div>
+<div class="space-y-3 bg-surface-container-lowest p-4 rounded-lg shadow-sm">
+<label class="font-label font-bold text-xs text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">magic_button</span> SFX
+                        </label>
+<input class="w-full appearance-none bg-transparent custom-slider" type="range" value="45"/>
+</div>
+<div class="space-y-3 bg-surface-container-lowest p-4 rounded-lg shadow-sm">
+<label class="font-label font-bold text-xs text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">record_voice_over</span> Voice
+                        </label>
+<input class="w-full appearance-none bg-transparent custom-slider" type="range" value="100"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Visuals Section: Bento Grid Card -->
+<section class="bg-surface-container-low p-8 rounded-xl space-y-6 relative overflow-hidden">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+<h2 class="font-headline font-bold text-lg text-on-surface">Visual Atmosphere</h2>
+</div>
+<div class="space-y-6">
+<!-- Brightness -->
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm space-y-4">
+<div class="flex justify-between items-center">
+<label class="font-label font-bold text-sm text-on-surface-variant">Brightness</label>
+<span class="material-symbols-outlined text-secondary">light_mode</span>
+</div>
+<input class="w-full appearance-none bg-transparent custom-slider" style="--track-color: #b2f2bb" type="range" value="50"/>
+</div>
+<!-- Text Speed Staggered Chips -->
+<div class="space-y-4">
+<label class="font-label font-bold text-sm text-on-surface-variant block px-1">Text Speed</label>
+<div class="flex flex-wrap gap-4 items-center">
+<button class="px-6 py-3 rounded-full bg-surface-variant text-on-surface-variant font-bold text-sm transition-all hover:scale-95 -rotate-1 relative">
+                            Slow
+                            <div class="glossy-accent"></div>
+</button>
+<button class="px-8 py-4 rounded-full bg-tertiary-container text-on-tertiary-container font-bold text-md shadow-lg shadow-tertiary/10 scale-110 transition-all rotate-2 relative">
+                            Normal
+                            <div class="glossy-accent"></div>
+</button>
+<button class="px-6 py-3 rounded-full bg-surface-variant text-on-surface-variant font-bold text-sm transition-all hover:scale-95 -rotate-1 relative">
+                            Fast
+                            <div class="glossy-accent"></div>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- System Section: Asymmetric Layout -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Auto Play Toggle -->
+<div class="bg-primary-container p-8 rounded-xl flex items-center justify-between relative group cursor-pointer transition-all hover:bg-primary-fixed-dim overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline font-bold text-on-primary-container text-lg">Auto-play</h3>
+<p class="font-body text-xs text-on-primary-container/70">Let the story flow on its own</p>
+</div>
+<div class="w-14 h-8 bg-on-primary/30 rounded-full p-1 transition-colors relative z-10">
+<div class="w-6 h-6 bg-surface-container-lowest rounded-full shadow-md translate-x-6"></div>
+</div>
+<div class="absolute -bottom-4 -left-4 opacity-5 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-8xl">auto_stories</span>
+</div>
+</div>
+<!-- Clear Cache / Reset -->
+<div class="bg-surface-container-highest p-8 rounded-xl flex items-center justify-between relative group cursor-pointer transition-all hover:bg-error-container/20 overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline font-bold text-on-surface text-lg">Clear Cache</h3>
+<p class="font-body text-xs text-on-surface-variant">Reset settings and free space</p>
+</div>
+<button class="p-3 bg-surface-container-lowest text-error rounded-full shadow-sm relative z-10 group-active:scale-90 transition-transform">
+<span class="material-symbols-outlined">restart_alt</span>
+</button>
+<div class="absolute -bottom-4 -right-4 opacity-5 group-hover:rotate-12 transition-transform">
+<span class="material-symbols-outlined text-8xl">delete_sweep</span>
+</div>
+</div>
+</section>
+<!-- Decorative Illustration Element -->
+<div class="relative py-12 flex justify-center">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent blur-3xl"></div>
+<img alt="Dreamscape" class="w-48 h-48 object-cover rounded-full shadow-2xl border-8 border-surface-container-lowest rotate-3 hover:rotate-0 transition-transform duration-700" data-alt="Dreamy surreal pastel landscape with soft clouds, floating crystals, and ethereal pink and lavender light reflecting on water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKphxWNEcslrc3-zAaAt3Aiovcb15Rd381ZimnnIrmc8g75BUGFPAkYzLPfiPDEb04fqpTqGsOfWd8VJ_GDfTPly0GWnFK25Gs2PP55LLmIlcCZErJLLzq5lj1jbVbVpJlYJQVDkhyPB5W4YJtZQAIUflCray9pZ847Xti_ehciyCg98WPBXwARz-ZS75ppBcxiq46NXt9l1aMumNcZr4AelegItak6eM9d9CIZbsUyesNXAJzZvkEzaghrdDUVWXxGCKVMEXR35Q"/>
+<div class="absolute bottom-10 right-1/4 bg-tertiary-container text-on-tertiary-container px-4 py-2 rounded-full font-bold text-xs shadow-lg animate-bounce">
+                Settings saved!
+            </div>
+</div>
+</main>
+<!-- BottomNavBar from JSON -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-6 pt-2 bg-[#f5eff1]/70 dark:bg-[#1a1617]/70 backdrop-blur-xl rounded-t-[3rem] shadow-[0_-4px_24px_rgba(130,74,94,0.04)]">
+<div class="flex flex-col items-center justify-center text-[#824a5e]/60 dark:text-[#fdb5cc]/60 p-3 transition-all duration-300 scale-100 active:scale-90 hover:bg-[#fdb5cc]/50 dark:hover:bg-[#824a5e]/50 cursor-pointer">
+<span class="material-symbols-outlined">history</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">History</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#824a5e]/60 dark:text-[#fdb5cc]/60 p-3 transition-all duration-300 scale-100 active:scale-90 hover:bg-[#fdb5cc]/50 dark:hover:bg-[#824a5e]/50 cursor-pointer">
+<span class="material-symbols-outlined">save</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">Save</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#824a5e]/60 dark:text-[#fdb5cc]/60 p-3 transition-all duration-300 scale-100 active:scale-90 hover:bg-[#fdb5cc]/50 dark:hover:bg-[#824a5e]/50 cursor-pointer">
+<span class="material-symbols-outlined">upload</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">Load</span>
+</div>
+<!-- Active Tab: Settings -->
+<div class="flex flex-col items-center justify-center bg-[#fdb5cc] dark:bg-[#824a5e] text-[#824a5e] dark:text-[#fdb5cc] rounded-full p-3 transition-all duration-300 scale-100 active:scale-90 cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">Settings</span>
+</div>
+</nav>
+</body></html>
